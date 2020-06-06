@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 
 
-def clickAll():
+def clickAll(): //click button on the web
     driver.find_element_by_id("11_1").click()
     driver.find_element_by_id("12_1").click()
     driver.find_element_by_id("13_1").click()
@@ -39,7 +39,7 @@ def clickAll():
 url = "https://ceq.nkust.edu.tw/"
 user = input("studentID: ")
 passWord = input("password: ")
-option = webdriver.ChromeOptions()  # 不要出現自動化工具
+option = webdriver.ChromeOptions()  # 不要出現自動化工具顯示
 option.add_experimental_option('excludeSwitches', ['enable-automation'])
 driver = webdriver.Chrome(chrome_options=option)
 driver.get(url)
